@@ -2,6 +2,8 @@
 
 cloudscribe.Setup provides a framework for running intallation and upgrade scripts for ADO.NET data implementations in a web application. The [ADO.NET data layers for cloudscribe Core](https://github.com/joeaudette/cloudscribe.Core.Data) are designed by convention to use this setup system. cloudscribe.Setup includes a SetupController for ASP.NET Core that automates the process of detecting and executing new installation and upgrade scripts.
 
+[![Join the chat at https://gitter.im/joeaudette/cloudscribe](https://badges.gitter.im/joeaudette/cloudscribe.svg)](https://gitter.im/joeaudette/cloudscribe?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 The /Setup page can run sql scripts found under
 
 /config/applications/[applicationname]/install/[dbplatform]/
@@ -77,8 +79,3 @@ In production installations that are up to date you maywish to disable the /Setu
   
 /Setup will return a 404 page not found response if disabled
 
-If you have questions or just want to be social, say hello in our gitter chat room. I try to monitor that room on a regular basis while I'm working, but if I'm not around you can leave  message.
-
-[![Join the chat at https://gitter.im/joeaudette/cloudscribe](https://badges.gitter.im/joeaudette/cloudscribe.svg)](https://gitter.im/joeaudette/cloudscribe?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-
-I'm also on twitter @joeaudette
