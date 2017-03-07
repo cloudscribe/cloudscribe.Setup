@@ -1,28 +1,25 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+# Visual Studio 15
+VisualStudioVersion = 15.0.26228.4
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{DDA3FB73-5156-4277-808B-F01993B55414}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8105FE59-2116-42E1-8C5A-25B0F4527D7A}"
-	ProjectSection(SolutionItems) = preProject
-		global.json = global.json
-	EndProjectSection
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "cloudscribe.Setup.Web", "src\cloudscribe.Setup.Web\cloudscribe.Setup.Web.xproj", "{79187BE8-4BF3-4FE2-969E-4405AD2E3516}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "cloudscribe.Setup.Web", "src\cloudscribe.Setup.Web\cloudscribe.Setup.Web.csproj", "{79187BE8-4BF3-4FE2-969E-4405AD2E3516}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "cloudscribe.Setup.Firebird", "src\cloudscribe.Setup.Firebird\cloudscribe.Setup.Firebird.xproj", "{E5EC8E58-B856-45C8-B124-9F9D9206509F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "cloudscribe.Setup.Firebird", "src\cloudscribe.Setup.Firebird\cloudscribe.Setup.Firebird.csproj", "{E5EC8E58-B856-45C8-B124-9F9D9206509F}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "cloudscribe.Setup.MSSQL", "src\cloudscribe.Setup.MSSQL\cloudscribe.Setup.MSSQL.xproj", "{67AAB254-D08A-4178-90B5-4B07E5623B43}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "cloudscribe.Setup.MSSQL", "src\cloudscribe.Setup.MSSQL\cloudscribe.Setup.MSSQL.csproj", "{67AAB254-D08A-4178-90B5-4B07E5623B43}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "cloudscribe.Setup.MySql", "src\cloudscribe.Setup.MySql\cloudscribe.Setup.MySql.xproj", "{E55836C8-6CB8-4B27-A3DF-7E0B4DAF9263}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "cloudscribe.Setup.MySql", "src\cloudscribe.Setup.MySql\cloudscribe.Setup.MySql.csproj", "{E55836C8-6CB8-4B27-A3DF-7E0B4DAF9263}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "cloudscribe.Setup.pgsql", "src\cloudscribe.Setup.pgsql\cloudscribe.Setup.pgsql.xproj", "{85DA26FA-2F8F-4E59-B900-452327475F14}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "cloudscribe.Setup.pgsql", "src\cloudscribe.Setup.pgsql\cloudscribe.Setup.pgsql.csproj", "{85DA26FA-2F8F-4E59-B900-452327475F14}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "cloudscribe.Setup.SqlCe", "src\cloudscribe.Setup.SqlCe\cloudscribe.Setup.SqlCe.xproj", "{FEA3C6F5-6C93-49A2-A818-98C38A9DEA41}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "cloudscribe.Setup.SqlCe", "src\cloudscribe.Setup.SqlCe\cloudscribe.Setup.SqlCe.csproj", "{FEA3C6F5-6C93-49A2-A818-98C38A9DEA41}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "cloudscribe.Setup.Sqlite", "src\cloudscribe.Setup.Sqlite\cloudscribe.Setup.Sqlite.xproj", "{8FC8EDE1-145A-4F39-AE8A-59DF6589458D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "cloudscribe.Setup.Sqlite", "src\cloudscribe.Setup.Sqlite\cloudscribe.Setup.Sqlite.csproj", "{8FC8EDE1-145A-4F39-AE8A-59DF6589458D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

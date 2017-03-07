@@ -1,0 +1,43 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Description>cloudscribe database setup component for Firebird Sql</Description>
+    <Copyright>2015 Source Tree Solutions</Copyright>
+    <AssemblyTitle>cloudscribe.Setup.Firebird</AssemblyTitle>
+    <VersionPrefix>1.0.0-beta1</VersionPrefix>
+    <Authors>Joe Audette</Authors>
+    <TargetFramework>net451</TargetFramework>
+    <AssemblyName>cloudscribe.Setup.Firebird</AssemblyName>
+    <PackageId>cloudscribe.Setup.Firebird</PackageId>
+    <PackageTags>cloudscribe;setup;firebird;firebirdsql</PackageTags>
+    <PackageIconUrl>https://raw.githubusercontent.com/joeaudette/cloudscribe/master/cloudscribe-icon-32.png</PackageIconUrl>
+    <PackageProjectUrl>https://github.com/joeaudette/cloudscribe.Setup</PackageProjectUrl>
+    <PackageLicenseUrl>http://www.apache.org/licenses/LICENSE-2.0</PackageLicenseUrl>
+    <GenerateAssemblyTitleAttribute>false</GenerateAssemblyTitleAttribute>
+    <GenerateAssemblyDescriptionAttribute>false</GenerateAssemblyDescriptionAttribute>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+    <GenerateAssemblyCopyrightAttribute>false</GenerateAssemblyCopyrightAttribute>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\cloudscribe.Setup.Web\cloudscribe.Setup.Web.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="cloudscribe.Core.Models" Version="1.0.0-*" />
+    <PackageReference Include="cloudscribe.DbHelpers.Firebird" Version="1.0.0-*" />
+    <PackageReference Include="FirebirdSql.Data.FirebirdClient" Version="4.6.2" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="1.0.2" />
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="1.0.2" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="1.0.2" />
+    <PackageReference Include="Microsoft.Extensions.OptionsModel" Version="1.0.0-rc1-final" />
+  </ItemGroup>
+
+  <ItemGroup Condition=" '$(TargetFramework)' == 'net451' ">
+    <Reference Include="System" />
+    <Reference Include="Microsoft.CSharp" />
+  </ItemGroup>
+
+</Project>

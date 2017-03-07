@@ -1,0 +1,48 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Description>A set of components and an MVC controller used for setup operations on a web application such as running sql install or upgrade scripts</Description>
+    <Copyright>2015 Source Tree Solutions</Copyright>
+    <AssemblyTitle>cloudscribe.Setup.Web</AssemblyTitle>
+    <VersionPrefix>1.0.0-beta3</VersionPrefix>
+    <Authors>Joe Audette</Authors>
+    <TargetFrameworks>net451;dnxcore50</TargetFrameworks>
+    <AssemblyName>cloudscribe.Setup.Web</AssemblyName>
+    <PackageId>cloudscribe.Setup.Web</PackageId>
+    <PackageTags>cloudscribe;setup;database;install</PackageTags>
+    <PackageIconUrl>https://raw.githubusercontent.com/joeaudette/cloudscribe/master/cloudscribe-icon-32.png</PackageIconUrl>
+    <PackageProjectUrl>https://github.com/joeaudette/cloudscribe.Setup</PackageProjectUrl>
+    <PackageLicenseUrl>http://www.apache.org/licenses/LICENSE-2.0</PackageLicenseUrl>
+    <GenerateAssemblyTitleAttribute>false</GenerateAssemblyTitleAttribute>
+    <GenerateAssemblyDescriptionAttribute>false</GenerateAssemblyDescriptionAttribute>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+    <GenerateAssemblyCopyrightAttribute>false</GenerateAssemblyCopyrightAttribute>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="cloudscribe.Core.Models" Version="1.0.0-*" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="1.0.2" />
+    <PackageReference Include="Microsoft.Extensions.OptionsModel" Version="1.0.0-rc1-final" />
+    <PackageReference Include="Microsoft.Extensions.PlatformAbstractions" Version="1.0.0" />
+    <PackageReference Include="Microsoft.AspNet.Http.Abstractions" Version="1.0.0-rc1-final" />
+    <PackageReference Include="Microsoft.AspNet.Http.Features" Version="1.0.0-rc1-final" />
+    <PackageReference Include="Microsoft.AspNet.Http" Version="1.0.0-rc1-final" />
+    <PackageReference Include="Microsoft.AspNet.Authorization" Version="1.0.0-rc1-final" />
+  </ItemGroup>
+
+  <ItemGroup Condition=" '$(TargetFramework)' == 'net451' ">
+    <Reference Include="System" />
+    <Reference Include="Microsoft.CSharp" />
+  </ItemGroup>
+
+  <ItemGroup Condition=" '$(TargetFramework)' == 'dnxcore50' ">
+    <PackageReference Include="Microsoft.CSharp" Version="4.0.1" />
+    <PackageReference Include="System.Collections" Version="4.0.11" />
+    <PackageReference Include="System.Linq" Version="4.1.0" />
+    <PackageReference Include="System.Runtime" Version="4.1.0" />
+    <PackageReference Include="System.Threading" Version="4.0.11" />
+  </ItemGroup>
+
+</Project>

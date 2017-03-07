@@ -1,0 +1,42 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Description>cloudscribe database setup component for SqlServer Compact</Description>
+    <Copyright>2015 Source Tree Solutions</Copyright>
+    <AssemblyTitle>cloudscribe.Setup.SqlCe</AssemblyTitle>
+    <VersionPrefix>1.0.0-beta1</VersionPrefix>
+    <Authors>Joe Audette</Authors>
+    <TargetFramework>net451</TargetFramework>
+    <AssemblyName>cloudscribe.Setup.SqlCe</AssemblyName>
+    <PackageId>cloudscribe.Setup.SqlCe</PackageId>
+    <PackageTags>cloudscribe;setup;sqlce</PackageTags>
+    <PackageIconUrl>https://raw.githubusercontent.com/joeaudette/cloudscribe/master/cloudscribe-icon-32.png</PackageIconUrl>
+    <PackageProjectUrl>https://github.com/joeaudette/cloudscribe.Setup</PackageProjectUrl>
+    <PackageLicenseUrl>http://www.apache.org/licenses/LICENSE-2.0</PackageLicenseUrl>
+    <GenerateAssemblyTitleAttribute>false</GenerateAssemblyTitleAttribute>
+    <GenerateAssemblyDescriptionAttribute>false</GenerateAssemblyDescriptionAttribute>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+    <GenerateAssemblyCopyrightAttribute>false</GenerateAssemblyCopyrightAttribute>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\cloudscribe.Setup.Web\cloudscribe.Setup.Web.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="cloudscribe.Core.Models" Version="1.0.0-*" />
+    <PackageReference Include="cloudscribe.DbHelpers.SqlCe" Version="1.0.0-*" />
+    <PackageReference Include="Microsoft.SqlServer.Compact" Version="4.0.8876.1" />
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="1.0.2" />
+    <PackageReference Include="Microsoft.Extensions.OptionsModel" Version="1.0.0-rc1-final" />
+    <PackageReference Include="Microsoft.Extensions.PlatformAbstractions" Version="1.0.0" />
+  </ItemGroup>
+
+  <ItemGroup Condition=" '$(TargetFramework)' == 'net451' ">
+    <Reference Include="System" />
+    <Reference Include="Microsoft.CSharp" />
+  </ItemGroup>
+
+</Project>
