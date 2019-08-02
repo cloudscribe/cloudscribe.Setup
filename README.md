@@ -2,8 +2,6 @@
 
 cloudscribe.Setup provides a framework for running intallation and upgrade scripts for ADO.NET data implementations in a web application. The [ADO.NET data layers for cloudscribe Core](https://github.com/joeaudette/cloudscribe.Core.Data) are designed by convention to use this setup system. cloudscribe.Setup includes a SetupController for ASP.NET Core that automates the process of detecting and executing new installation and upgrade scripts.
 
-[![Join the chat at https://gitter.im/joeaudette/cloudscribe](https://badges.gitter.im/joeaudette/cloudscribe.svg)](https://gitter.im/joeaudette/cloudscribe?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-
 The /Setup page can run sql scripts found under
 
 /config/applications/[applicationname]/install/[dbplatform]/
